@@ -1,0 +1,19 @@
+{
+    "plugins": ["plugins/markdown"],
+    "source": {
+        "include": ["notas"] ,
+        "exclude":["node_modules",".vscode","doc","public"],
+        "includePattern": ".js$",
+        "excludePattern": "(node_modules|doc)"
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    },
+    "opts": {
+        "recurse": true,
+        "destination": "./doc",
+        "tutorials": "./tutorial"
+    },
+    "opts=>template": "node_modules/clean-jsdoc-theme"
+}
